@@ -1,0 +1,122 @@
+[
+  {
+    "event_id": "EVT-1001",
+    "asset_id": "TX-221",
+    "asset_name": "Transformer 221",
+    "scheduled_start": "2026-02-01",
+    "scheduled_end": "2026-02-03",
+    "event_type": "Planned Maintenance",
+    "status": "Scheduled",
+    "description": "Transformer inspection and oil sampling"
+  },
+  {
+    "event_id": "EVT-1002",
+    "asset_id": "BR-104",
+    "asset_name": "Breaker 104",
+    "scheduled_start": "2026-02-02",
+    "scheduled_end": "2026-02-04",
+    "event_type": "Relay Testing",
+    "status": "Scheduled",
+    "description": "Protection relay testing and breaker trip checks"
+  },
+  {
+    "event_id": "EVT-1003",
+    "asset_id": "LN-884",
+    "asset_name": "Line 884",
+    "scheduled_start": "2026-02-10",
+    "scheduled_end": "2026-02-12",
+    "event_type": "Line Maintenance",
+    "status": "Scheduled",
+    "description": "Vegetation management and structure inspection"
+  },
+  {
+    "event_id": "EVT-1004",
+    "asset_id": "SW-330",
+    "asset_name": "Switch 330",
+    "scheduled_start": "2026-02-11",
+    "scheduled_end": "2026-02-13",
+    "event_type": "Switch Maintenance",
+    "status": "Scheduled",
+    "description": "Switch inspection and lubrication"
+  },
+  {
+    "event_id": "EVT-1005",
+    "asset_id": "GEN-007",
+    "asset_name": "Generator 007",
+    "scheduled_start": "2026-02-15",
+    "scheduled_end": "2026-02-16",
+    "event_type": "Generator Inspection",
+    "status": "Scheduled",
+    "description": "Routine backup generator inspection"
+  },
+  {
+    "event_id": "EVT-1006",
+    "asset_id": "PMP-017",
+    "asset_name": "Pump 017",
+    "scheduled_start": "2026-02-18",
+    "scheduled_end": "2026-02-18",
+    "event_type": "Pump Maintenance",
+    "status": "Scheduled",
+    "description": "Mechanical seal inspection"
+  },
+  {
+    "event_id": "EVT-1007",
+    "asset_id": "TX-901",
+    "asset_name": "Transformer 901",
+    "scheduled_start": "2026-02-20",
+    "scheduled_end": "2026-02-21",
+    "event_type": "Planned Maintenance",
+    "status": "Completed",
+    "description": "Completed transformer inspection"
+  },
+  {
+    "event_id": "EVT-1008",
+    "asset_id": "BR-777",
+    "asset_name": "Breaker 777",
+    "scheduled_start": "2026-02-22",
+    "scheduled_end": "2026-02-23",
+    "event_type": "Breaker Maintenance",
+    "status": "Cancelled",
+    "description": "Cancelled maintenance window"
+  },
+  {
+    "event_id": "EVT-1009",
+    "asset_id": "LN-112",
+    "asset_name": "Line 112",
+    "scheduled_start": "2026-03-01",
+    "scheduled_end": "2026-03-03",
+    "event_type": "Line Clearance",
+    "status": "Scheduled",
+    "description": "Clearance for inspection work"
+  },
+  {
+    "event_id": "EVT-1010",
+    "asset_id": "BR-220",
+    "asset_name": "Breaker 220",
+    "scheduled_start": "2026-03-02",
+    "scheduled_end": "2026-03-04",
+    "event_type": "Breaker Testing",
+    "status": "Scheduled",
+    "description": "Control circuit and breaker timing tests"
+  },
+  {
+    "event_id": "EVT-1011",
+    "asset_id": "CAP-050",
+    "asset_name": "Capacitor Bank 050",
+    "scheduled_start": "2026-03-05",
+    "scheduled_end": "2026-03-05",
+    "event_type": "Capacitor Inspection",
+    "status": "Scheduled",
+    "description": "Capacitor bank visual inspection"
+  },
+  {
+    "event_id": "EVT-1012",
+    "asset_id": "UNK-999",
+    "asset_name": "Unknown Asset 999",
+    "scheduled_start": "2026-03-07",
+    "scheduled_end": "2026-03-08",
+    "event_type": "Unmapped Maintenance",
+    "status": "Scheduled",
+    "description": "Event for asset not present in the critical asset reference"
+  }
+]

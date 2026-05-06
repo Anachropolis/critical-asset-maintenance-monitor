@@ -1,0 +1,9 @@
+asset_id,asset_name,criticality,redundancy_group,path_role,notes
+TX-221,Transformer 221,High,North Supply,A,Primary supply asset for North Supply group
+BR-104,Breaker 104,High,North Supply,B,Alternate path breaker for North Supply group
+LN-884,Line 884,High,East Supply,A,Primary transmission path for East Supply group
+SW-330,Switch 330,High,East Supply,B,Alternate switching path for East Supply group
+GEN-007,Generator 007,Medium,Backup Supply,A,Backup generation source
+LN-112,Line 112,High,South Supply,A,Primary transmission path for South Supply group
+BR-220,Breaker 220,High,South Supply,B,Alternate path breaker for South Supply group
+CAP-050,Capacitor Bank 050,Low,Voltage Support,Support,Voltage support asset; included to test low-criticality filtering

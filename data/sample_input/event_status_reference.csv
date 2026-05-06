@@ -1,0 +1,5 @@
+status,include_in_analysis,description
+Scheduled,Yes,Future event that should be reviewed
+Completed,No,Historical event; excluded from active risk reporting
+Cancelled,No,Cancelled event; excluded from active risk reporting
+Deferred,No,Deferred event; excluded unless rescheduled
