@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589a2e3d-cb15-48ce-9149-4a9f1d9ebdf5" name="Changes" comment="Merge remote-tracking branch 'refs/remotes/origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reporters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reporters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="589a2e3d-cb15-48ce-9149-4a9f1d9ebdf5" name="Changes" comment="fix: minor code refactor" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,11 +82,57 @@
       <option name="project" value="LOCAL" />
       <updated>1778196861395</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add DataAnalyzer class and refine_report method for filtering events">
+      <option name="closed" value="true" />
+      <created>1778508400373</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778508400373</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add OverlapTool class for identifying event conflicts">
+      <option name="closed" value="true" />
+      <created>1778508526355</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778508526355</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: add Reporter class for creating overlap.csv">
+      <option name="closed" value="true" />
+      <created>1778508815329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1778508815329</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add logic for CLI">
+      <option name="closed" value="true" />
+      <created>1778508886108</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778508886108</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: minor code refactor">
+      <option name="closed" value="true" />
+      <created>1778508938080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778508938080</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'refs/remotes/origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'refs/remotes/origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="feat: add DataAnalyzer class and refine_report method for filtering events" />
+    <MESSAGE value="feat: add OverlapTool class for identifying event conflicts" />
+    <MESSAGE value="feat: add Reporter class for creating overlap.csv" />
+    <MESSAGE value="feat: add logic for CLI" />
+    <MESSAGE value="fix: minor code refactor" />
+    <MESSAGE value="feat: major refactor of tool logic into independent modules along with minor format adjustment" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: major refactor of tool logic into independent modules along with minor format adjustment" />
   </component>
 </project>
