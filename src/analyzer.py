@@ -1,34 +1,32 @@
-import api_client
+from api_client import ApiClient
+import utils
 import pandas as pd
 
 
-client = api_client.ApiClient()
-
-critical_assets = pd.read_csv("../data/sample_input/critical_assets.csv")
-event_status_ref = pd.read_csv("../data/sample_input/event_status_reference.csv")
-maintenance_events = client.pull_data("maintenance_events")
+CLIENT = ApiClient()
+EVENT_STATUS_REFERENCE = pd.read_csv("../data/sample_input/event_status_reference.csv")
+CRITICAL_ASSETS = pd.read_csv("../data/sample_input/critical_assets.csv")
 
 
-# print(maintenance_events)
-scheduled = maintenance_events[(maintenance_events["status"] != "Completed") & (maintenance_events["status"] != "Cancelled") & (maintenance_events["status"] != "Deferred")]
-critical = scheduled[scheduled["asset_id"].isin(critical_assets["asset_id"])]
+class DataAnalyzer:
 
-critical_w_paths = critical.merge(critical_assets[['asset_id', 'path_role']], on='asset_id', how='left')
+    def __init__(self) -> None:
+        self.critical_assets = CRITICAL_ASSETS
+        self.event_status_ref = EVENT_STATUS_REFERENCE
+        self.maintenance_events = CLIENT.pull_data("maintenance_events")
+        self.filtered_events = None
 
-path_a_work = critical_w_paths[critical_w_paths["path_role"] == "A"]
-path_b_work = critical_w_paths[critical_w_paths["path_role"] == "B"]
+    def refine_report(self):
+        scheduled = self.maintenance_events[~(self.maintenance_events["status"].isin(["Completed", "Cancelled", "Deferred"]))]
+        critical = scheduled[scheduled["asset_id"].isin(self.critical_assets["asset_id"])]
+        filtered_events = critical.merge(self.critical_assets[['asset_id', 'path_role']], on='asset_id', how='left')
 
-event_list = []
+        critical_path_overlaps = utils.OverlapTool().run(dataset=filtered_events)
 
-for entry in path_a_work.iterrows():
-    for entry2 in path_b_work.iterrows():
-        if (entry[1]["scheduled_start"] <= entry2[1]["scheduled_end"] and
-                entry2[1]["scheduled_start"] <= entry[1]["scheduled_end"]):
-            event_list.append(entry[1]["event_id"])
-            event_list.append(entry2[1]["event_id"])
+        return critical_path_overlaps
 
 
 
-critical_w_paths_new = critical_w_paths[critical_w_paths["event_id"].isin(event_list)]
 
-critical_w_paths_new.to_csv("../data/sample_output/refined_critical_assets_2.csv", index=False)
+
+# critical_path_overlaps.to_csv("../data/sample_output/critical_path_overlaps.csv", index=False)
