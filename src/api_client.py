@@ -7,6 +7,7 @@ class ApiClient:
         self.base_url = "http://127.0.0.1:8000/"
 
     def pull_data(self, endpoint: str) -> pd.DataFrame:
+
         url = f"{self.base_url}/{endpoint}"
         response = (requests.get(url))
         response.raise_for_status()
@@ -16,7 +17,4 @@ class ApiClient:
 
 
 
-# client = ApiClient()
-#
-# client.pull_data("frog")
 
