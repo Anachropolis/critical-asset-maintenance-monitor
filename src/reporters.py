@@ -4,8 +4,13 @@ from pathlib import Path
 
 class Reporter:
 
-    def generate_csv_report(self, filepath: Path, dataset: pd.DataFrame, filename: str ="critical_path_overlaps.csv") -> None:
+    def generate_csv_report(self, filepath: Path, filename: str, dataset: pd.DataFrame, ) -> None:
 
         Path.mkdir(filepath, exist_ok=True)
-        full_path = filepath / filename
-        dataset.to_csv(full_path, index=False)
+        if filename and not filename.endswith('.csv'):
+            filename = filename + '.csv'
+
+        if filename is None:
+            filename = "report.csv"
+
+        dataset.to_csv(filepath.joinpath(filename), index=False)

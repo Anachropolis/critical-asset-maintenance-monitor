@@ -1,5 +1,6 @@
 import pandas as pd
 import api_client
+from pathlib import Path
 
 client = api_client.ApiClient()
 
@@ -20,6 +21,25 @@ class OverlapTool:
                     event_list.append(entry2[1]["event_id"])
 
         return dataset[dataset["event_id"].isin(event_list)]
+
+
+
+class ValidationTool:
+
+    def run(self, df: pd.DataFrame, required_columns: set[str], file_label: str) -> None:
+        """Validate the columns present in the dataframe"""
+        missing = required_columns - set(df.columns)
+
+        if missing:
+            raise ValueError(
+                f"{file_label} is missing required columns: {', '.join(sorted(missing))}"
+            )
+
+
+class DataLoader:
+
+    def run(self, file: Path) -> pd.DataFrame:
+        return pd.read_csv(file)
 
 
 
