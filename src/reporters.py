@@ -4,13 +4,10 @@ from pathlib import Path
 
 class Reporter:
 
-    def generate_csv_report(self, filepath: Path, filename: str, dataset: pd.DataFrame, ) -> None:
+    def generate_csv_report(self, filepath: Path, filename: str, dataset: pd.DataFrame, ) -> Path:
+        """generates a CSV report from given filepath and filename"""
+        filepath.mkdir(parents=True, exist_ok=True)
+        output_path = filepath / filename
+        dataset.to_csv(output_path, index=False)
 
-        Path.mkdir(filepath, exist_ok=True)
-        if filename and not filename.endswith('.csv'):
-            filename = filename + '.csv'
-
-        if filename is None:
-            filename = "report.csv"
-
-        dataset.to_csv(filepath.joinpath(filename), index=False)
+        return output_path

@@ -9,7 +9,7 @@ class ApiClient:
     def pull_data(self, endpoint: str) -> pd.DataFrame:
 
         url = f"{self.base_url}/{endpoint.lstrip('/')}"
-        response = (requests.get(url))
+        response = (requests.get(url, timeout=10))
         response.raise_for_status()
         json_response = response.json()
         data_frame_response = pd.DataFrame(json_response)

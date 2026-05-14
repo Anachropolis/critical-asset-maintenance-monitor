@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589a2e3d-cb15-48ce-9149-4a9f1d9ebdf5" name="Changes" comment="feat: major refactor of tool logic into independent modules along with minor format adjustment">
+    <list default="true" id="589a2e3d-cb15-48ce-9149-4a9f1d9ebdf5" name="Changes" comment="minor refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyzer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api_client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
@@ -48,18 +49,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.analyzer.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.utils.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.analyzer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -139,8 +140,35 @@
       <option name="project" value="LOCAL" />
       <updated>1778509197558</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="minor refactor">
+      <option name="closed" value="true" />
+      <created>1778712103381</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778712103381</updated>
+    </task>
+    <task id="LOCAL-00010" summary="minor refactor">
+      <option name="closed" value="true" />
+      <created>1778712131029</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1778712131029</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'refs/remotes/origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
@@ -150,6 +178,8 @@
     <MESSAGE value="feat: add logic for CLI" />
     <MESSAGE value="fix: minor code refactor" />
     <MESSAGE value="feat: major refactor of tool logic into independent modules along with minor format adjustment" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: major refactor of tool logic into independent modules along with minor format adjustment" />
+    <MESSAGE value="fix: minor refactor" />
+    <MESSAGE value="minor refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor refactor" />
   </component>
 </project>
