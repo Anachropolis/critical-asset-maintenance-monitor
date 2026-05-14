@@ -362,16 +362,19 @@ python src/app.py \
   --overlaps
   ```
 ### Screenshots
-Mock API Documentation
+#### Mock API Documentation
+![img.png](data/documentation/img.png)
 
-Maintenance Event API Response
+#### Maintenance Event API Response
+![img_2.png](data/documentation/img_2.png)
 
-Terminal Output
+#### Terminal Output
+![img_3.png](data/documentation/img_3.png)
 
-Critical Asset Events Report
-
-Redundancy Conflicts Report
-
+#### Critical Asset Events Report
+![img_4.png](data/documentation/img_4.png)
+#### Redundancy Conflicts Report
+![img_5.png](data/documentation/img_5.png)
 ### Business Use Cases
 
 This automation pattern can be adapted for:
