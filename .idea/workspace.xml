@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589a2e3d-cb15-48ce-9149-4a9f1d9ebdf5" name="Changes" comment="update README.md">
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="589a2e3d-cb15-48ce-9149-4a9f1d9ebdf5" name="Changes" comment="add screenshots">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +54,11 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adamh\PycharmProjects\critical-asset-maintenance-monitor\data\documentation" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -191,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778798734602</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add screenshots">
+      <option name="closed" value="true" />
+      <created>1778799378362</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1778799378362</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +229,7 @@
     <MESSAGE value="fix: minor refactor of each project module" />
     <MESSAGE value="code refactor and README update" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="add screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="add screenshots" />
   </component>
 </project>

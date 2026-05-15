@@ -11,7 +11,7 @@ DATA = Path(__file__).resolve().parents[1] / "data" / "sample_input" / "maintena
 
 
 @app.get("/maintenance-events")
-def get_maintenance_events():
+def get_maintenance_events() -> dict:
     with DATA.open("r", encoding="utf-8") as file:
         events = json.load(file)
 
