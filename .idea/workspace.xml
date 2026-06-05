@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589a2e3d-cb15-48ce-9149-4a9f1d9ebdf5" name="Changes" comment="add screenshots">
+    <list default="true" id="589a2e3d-cb15-48ce-9149-4a9f1d9ebdf5" name="Changes" comment="fix: minor refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778799378362</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix: minor refactor">
+      <option name="closed" value="true" />
+      <created>1778878357853</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1778878357853</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,12 +234,12 @@
     <MESSAGE value="feat: add logic for CLI" />
     <MESSAGE value="fix: minor code refactor" />
     <MESSAGE value="feat: major refactor of tool logic into independent modules along with minor format adjustment" />
-    <MESSAGE value="fix: minor refactor" />
     <MESSAGE value="minor refactor" />
     <MESSAGE value="fix: minor refactor of each project module" />
     <MESSAGE value="code refactor and README update" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="add screenshots" />
-    <option name="LAST_COMMIT_MESSAGE" value="add screenshots" />
+    <MESSAGE value="fix: minor refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: minor refactor" />
   </component>
 </project>

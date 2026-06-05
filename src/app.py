@@ -40,13 +40,16 @@ def main():
     filtered_report = analyzer.refine_report()
     reporter = Reporter()
 
+    """prints both reports if nothing selected"""
     if not args.critical and not args.overlaps:
         args.critical = True
         args.overlaps = True
 
+    """prints critical event report"""
     if args.critical:
         reporter.generate_csv_report(filepath=filepath, filename=critical_filename, dataset=filtered_report)
 
+    """prints overlap event report"""
     if args.overlaps:
         overlap_report = analyzer.overlap_report()
         reporter.generate_csv_report(filepath=filepath, filename=overlap_filename, dataset=overlap_report)
