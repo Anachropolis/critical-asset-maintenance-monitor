@@ -24,32 +24,49 @@ def cli():
 
 
 def main():
+
     client = ApiClient()
     current_date = datetime.now().strftime("%Y-%m-%d")
 
 
-
+    # captures cli arguments
     args = cli()
 
+    # set output path
     filepath = Path(args.output_path)
+
+
+    # set critical event report and overlap report with current date appended
     critical_filename = f"critical_event_report_{current_date}.csv"
     overlap_filename = f"overlap_event_report_{current_date}.csv"
+
+
+    # retrieve maintenance event report and critical assets in dataframe format
     maintenance_events = client.pull_data(args.endpoint)
     critical_assets = DataLoader().run(Path(args.assets))
+
+
+    # consolidate maintenance event and critical asset dataframes
     analyzer = DataAnalyzer(maintenance_events=maintenance_events, critical_assets=critical_assets)
     filtered_report = analyzer.refine_report()
+
+
+    # create a reporter object
     reporter = Reporter()
 
-    """prints both reports if nothing selected"""
+
+    # print both reports if nothing selected
     if not args.critical and not args.overlaps:
         args.critical = True
         args.overlaps = True
 
-    """prints critical event report"""
+
+    # print critical event report
     if args.critical:
         reporter.generate_csv_report(filepath=filepath, filename=critical_filename, dataset=filtered_report)
 
-    """prints overlap event report"""
+
+    # prints overlap event report
     if args.overlaps:
         overlap_report = analyzer.overlap_report()
         reporter.generate_csv_report(filepath=filepath, filename=overlap_filename, dataset=overlap_report)
@@ -59,8 +76,6 @@ def main():
     print("\nCritical Asset Maintenance Monitor complete.")
     print(f"Maintenance events pulled from API: {len(maintenance_events)}")
     print(f"Critical asset events found: {len(filtered_report)}")
-
-
 
 
 
